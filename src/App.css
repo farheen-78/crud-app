@@ -1,38 +1,236 @@
-.App {
+body {
+  background-color: darkblue;
+}
+/* navbar */
+.one {
+  display: flex;
+  text-align: end;
+  margin-right: 2rem;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+}
+.one img {
+  /* width: 3rem;
+  height: 3rem; */
+  width: 30px;
+  height: 30px;
+  color: #2f80ed;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.one p {
+  position: absolute;
+  top: 0;
+  /* right: px; */
+  line-height: 1;
+  vertical-align: baseline;
+  font-size: small;
   text-align: center;
+  color: #fff;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+/* **************************************AddUser*********************************** */
+.con {
+  margin-left: 30px !important;
+  color: red !important;
+  font-weight: bold;
+}
+/* .marq {
+  width: 100%;
+  height: 200px;
+  direction: rtl;
+} */
+/*************************** NavBar ************************/
+.nav-link {
+  margin-left: 10px;
+}
+.nav-item:hover {
+  background: #3f11e4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand {
+  color: blue;
+  font-size: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background-color: silver;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* *********************************Button**************************************** */
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 10px;
+  /* border: 2px solid red; */
+  background-color: darkblue;
+  /* background: #350048; */
 }
 
-.App-link {
-  color: #61dafb;
+.container .btn {
+  text-align: center;
+  color: rgb(119, 3, 3);
+  border: 1px solid red;
+  margin-top: 20px;
 }
+.container .b2 {
+  width: 100px;
+  height: 50px;
+  color: red;
+  border: 1px soild yellow;
+  border-radius: 10px;
+  background: none;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top: 20px;
+}
+.container .b2:hover {
+  color: black;
+  border: none;
+  background: rgb(230, 95, 6);
+  box-shadow: 0 0 20px rgb(78, 95, 85), 0 0 60px rgb(211, 211, 206),
+    0 0 80px rgb(59, 223, 245);
+  transform: 0.5s;
+}
+.b3 {
+  background: transparent;
+  width: 100px;
+  height: 30px;
+  /* color: white; */
+  color: red;
+  border-color: #10ec91;
+  border-top: 2px solid #10ec91;
+  border-bottom: 2px solid #10ec91;
+  border-radius: 22px;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  transition: 2s;
+}
+.b3:hover {
+  box-shadow: 0 2px 50px 0 rgb(114, 247, 121), 0 20px 100px 0 #10ec91;
+  transition: 2s;
+}
+.b4 {
+  background: darkblue;
+  /* color: white; */
+  color: red;
+  width: 100px;
+  height: 80px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.b4:hover {
+  background-color: rgb(219, 4, 40);
+  box-shadow: 0 0 20px white;
+  transition: 1.5s;
+}
+.b5 {
+  background: #2f00ff;
+  padding: 10px 15px;
+  color: red;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.b5:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  /* background: chartreuse; */
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  transition: all 0.4s;
+}
+.b5:hover:before {
+  width: 100%;
+  height: 100%;
+  border-bottom: none;
+  border-right: none;
+}
+.b5:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  /* background: chartreuse; */
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  transition: all 0.4s;
+}
+.b5:hover:after {
+  width: 100%;
+  height: 100%;
+  border-left: none;
+  border-top: none;
+}
+/* ************************AddUser********************* */
+
+.con {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  /* background: #350048; */
+}
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  /* background-color: green !important; */
+  /* color: white !important; */
+  box-sizing: border-box;
+}
+.card1 {
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  border: 2px solid #eb8787;
+
+  box-shadow: 2px 5px 10px grey !important;
+}
+.con .btn {
+  text-align: center;
+  color: rgb(243, 21, 21);
+  border: 1px solid red;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* *************************Home************************** */
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab table {
+  width: 70%;
+
+  border-left: 2px solid grey !important;
+  border-top: 2px solid grey !important;
+  border-right: 2px solid grey !important;
+
+  box-shadow: 2px 5px 10px grey !important;
+}
+/* *******************DetailRecord*********************************** */
+.col {
+  color: red !important;
+  font-size: 20px;
 }
